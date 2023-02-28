@@ -1,9 +1,9 @@
-import './search-panel.css';
+import './search-panel.scss';
 
 const searchPanel = () => {
         return (
                 <input type="text"
-                        className="form-control search-input"
+                        className="form"
                         placeholder="Найти сотрудника" />
         )
 }

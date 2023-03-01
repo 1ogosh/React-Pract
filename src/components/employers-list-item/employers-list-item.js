@@ -1,11 +1,17 @@
 import './employers-list-item.scss';
 
-const EmployersListItem = () => {
+const EmployersListItem = ({name, salery, increase}) => {
+    
+    let classNames = 'app-list-group-item';
+    if (increase) {
+        classNames += ' -increase';
+    }
+    
     return (
-        <div className='app-list-group-item'>
+        <li className={classNames}>
 
-            <span className="app-list-group-item-label">John Smith</span>
-            <input type="text" className="app-list-group-item-input" defaultValue="1000$" />
+            <span className="app-list-group-item-label">{name}</span>
+            <input type="text" className="app-list-group-item-input" defaultValue={salery + '$'}/>
             <div className>
                 <button type="button" className="btn-cookie"></button>
 
@@ -13,7 +19,7 @@ const EmployersListItem = () => {
 
             </div>
 
-        </div>
+        </li>
 
     )
 }

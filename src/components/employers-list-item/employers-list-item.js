@@ -1,22 +1,21 @@
 import './employers-list-item.scss';
 
 const EmployersListItem = () => {
-        return (
-                <li >
-                        <span >Vasya Vasya</span>
-                        <input  dafaultValue="1000$" />
-                        <div >
-                                <button className='employ-btn'>
-                                        <i>del</i>
-                                </button>
+    return (
+        <div className='app-list-group-item'>
 
-                                <button className='employ-btn'>
-                                        <i>add</i>
-                                </button>
-                                <i></i>
-                        </div>
-                </li>
-        )
+            <span className="app-list-group-item-label">John Smith</span>
+            <input type="text" className="app-list-group-item-input" defaultValue="1000$" />
+            <div className>
+                <button type="button" className="btn-cookie"></button>
+
+                <button type="button" className="btn-trash"></button>
+
+            </div>
+
+        </div>
+
+    )
 }
 
 export default EmployersListItem;

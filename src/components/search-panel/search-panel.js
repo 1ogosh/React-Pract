@@ -1,10 +1,15 @@
 import './search-panel.scss';
+import AppFilter from '../app-filter/app-filter';
 
 const searchPanel = () => {
         return (
-                <input type="text"
-                        className="form"
-                        placeholder="Найти сотрудника" />
+                <div className="form-template">
+                        <input type="text"
+                                className="form-template-panel"
+                                placeholder="Найти сотрудника" />
+                        <AppFilter />
+                </div>
+
         )
 }
 

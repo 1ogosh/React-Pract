@@ -1,0 +1,25 @@
+.app-info {
+        padding-top: 30px;
+        display: block;
+        background-color: #4682B4;
+        height: 200px;
+        border-radius: 5px;
+
+        h1,
+        h2,
+        p {
+                margin-left: 60px;
+                color: #fff;
+        }
+
+        h1 {
+                font-size: 30px;
+                font-weight: 700;
+        }
+
+        p,
+        h2 {
+                font-size: 25px;
+                font-weight: 300;
+        }
+}

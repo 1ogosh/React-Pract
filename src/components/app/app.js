@@ -6,11 +6,10 @@ import EmployersAddForm from '../employers-add-form/employers-add-form';
 import './app.scss';
 
 function App() {
-
         const data = [
-                { name: "Andrew", salery: 800, increase: false },
-                { name: "Valeryi", salery: 1000, increase: true },
-                { name: "Alexey", salery: 1900, increase: false },
+                { name: "Andrew", salery: 800, increase: false, id: 1 },
+                { name: "Valeriy", salery: 1000, increase: true, id: 2 },
+                { name: "Alexey", salery: 1900, increase: false, id: 3 },
         ];
 
         return (

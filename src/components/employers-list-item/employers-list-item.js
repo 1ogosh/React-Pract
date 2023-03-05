@@ -1,68 +1,42 @@
-import { Component } from 'react';
 import './employers-list-item.scss';
 
 
-class EmployersListItem extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            increase: false,
-            like: false
-        }
+const EmployersListItem = (props) => {
+
+
+    const { name, salary, onDelete, onToggleProp, increase, rise } = props;
+
+    let classNames = 'app-list-group-item';
+    if (increase) {
+        classNames += ' increase';
     }
 
-    onIncrease = () => {
-        this.setState(({ increase }) => ({
-            increase: !increase
-        }));
+    if (rise) {
+        classNames += ' rise';
     }
 
-    onLike = () => {
-        this.setState(({ like }) => ({
-            like: !like
-        }));
-    }
+    return (
+        <li className={classNames}>
+            <span className="app-list-group-item-label" onClick={onToggleProp} data-toggle="rise">{name}</span>
+            <input type="text" className="app-list-group-item-input" defaultValue={salary + '$'} />
+            <div>
+                <button type="button"
+                    className="btn-cookie"
+                    onClick={onToggleProp}
+                    data-toggle="increase">
+                </button>
 
-    render() {
-        const { name, salery, onDelete } = this.props;
-        const { increase } = this.state;
-        const { like } = this.state;
+                <button type="button"
+                    className="btn-trash"
+                    onClick={onDelete}>
+                </button>
 
-        let classNames = 'app-list-group-item';
-        if (increase) {
-            classNames += ' increase';
-        }
+            </div>
 
-        if (like) {
-            classNames += ' like';
-        }
+        </li>
 
-        return (
-            <li className={classNames}>
-                <span className="app-list-group-item-label" onClick={this.onLike}>{name}</span>
-                <input type="text" className="app-list-group-item-input" defaultValue={salery + '$'} />
-                <div>
-                    <button type="button"
-                        className="btn-like"
-                        onClick={this.onLike}>
-                    </button>
-
-                    <button type="button"
-                        className="btn-cookie"
-                        onClick={this.onIncrease}>
-                    </button>
-
-                    <button type="button"
-                        className="btn-trash"
-                        onClick={onDelete}>
-                    </button>
-
-                </div>
-
-            </li>
-
-        )
-    }
+    )
 }
+
 
 export default EmployersListItem;

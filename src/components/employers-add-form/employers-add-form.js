@@ -13,14 +13,14 @@ class EmployersAddForm extends Component {
 
         onValueChange = (e) => {
                 this.setState({
-                        [e.target.name] : e.target.value
+                        [e.target.name]: e.target.value
                 })
         }
 
         render() {
-                
-                const {name, salary} = this.state;
-                
+
+                const { name, salary } = this.state;
+
                 return (
                         <div className="form">
                                 <h3>Добавьте нового сотрудника</h3>

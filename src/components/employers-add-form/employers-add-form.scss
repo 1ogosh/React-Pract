@@ -1,9 +1,10 @@
-.form{
+.form {
         height: 130px;
         background-color: #4682B4;
         margin-top: 20px;
         border-radius: 5px;
-        h3{
+
+        h3 {
                 font-size: 25px;
                 color: #fff;
                 margin-left: 20px;
@@ -11,15 +12,16 @@
         }
 }
 
-.add-form{
-        &-input{
+.add-form {
+        &-input {
                 margin-left: 20px;
                 height: 30px;
                 width: 360px;
                 border-radius: 5px;
                 border: none;
         }
-        &-btn{
+
+        &-btn {
                 margin-left: 20px;
                 height: 34px;
                 width: 100px;
@@ -28,6 +30,7 @@
                 border: 1px solid #fff;
                 border-radius: 5px;
                 transition: 0.3s ease;
+
                 &:hover {
                         border: 1px solid #4682B4;
                         background-color: #fff;
@@ -35,4 +38,3 @@
                 }
         }
 }
-

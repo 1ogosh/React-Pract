@@ -18,7 +18,7 @@ const EmployersListItem = (props) => {
     return (
         <li className={classNames}>
             <span className="app-list-group-item-label" onClick={onToggleProp} data-toggle="rise">{name}</span>
-            <input type="text" className="app-list-group-item-input" defaultValue={salary + '$'} />
+            <input type="text" readOnly className="app-list-group-item-input" defaultValue={salary + '$'} />
             <div>
                 <button type="button"
                     className="btn-cookie"

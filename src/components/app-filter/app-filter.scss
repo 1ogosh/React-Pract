@@ -1,6 +1,7 @@
 .btn-group {
         margin-left: 10%;
         margin-top: 10px;
+     
 }
 
 .btn-group-filter {
@@ -10,10 +11,13 @@
         background-color: #4682B4;
         color: #fff;
         transition: 0.4s ease;
+}
 
-        &:hover {
-                border: 1px solid #4682B4;
-                background-color: #fff;
-                color: #4682B4;
-        }
+.btn-group-filter-active {
+        width: 150px;
+        height: 35px;
+        border: 1px solid #4682B4;
+        background-color: #fff;
+        color: #4682B4;
+        transition: 0.4s ease;
 }

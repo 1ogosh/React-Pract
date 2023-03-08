@@ -10,7 +10,7 @@ const AppFilter = (props) => {
 
         const buttons = buttonsData.map(({ name, label }) => {
                 const active = props.filter === name;
-                const clazz = active ? 'btn-group-filter' : 'btn-group-filter';
+                const clazz = active ? 'btn-group-filter-active' : 'btn-group-filter';
                 return (
                         <button type='button'
                                 className={`btn ${clazz}`}
